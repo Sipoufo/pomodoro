@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
  * Description : 
  *  Initialisation of font using in app
  */
-class Roboto {
+class RobotoFontUtils {
   static TextStyle black =
       const TextStyle(fontFamily: "Roboto-Black", fontWeight: FontWeight.w900);
 

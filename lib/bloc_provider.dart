@@ -1,3 +1,7 @@
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:pomodoro/core/common/cubit/app_user_cubit.dart';
+import 'package:pomodoro/init_dependencies.dart';
+
 /**
  * @Sipoufo
  * Description : 
@@ -5,5 +9,9 @@
  */
 
 class AppBlocProvider {
-  static get allBlocProvider => {};
+  static get allBlocProviders => [
+        BlocProvider(
+          create: (_) => serviceLocator<AppUserCubit>(),
+        ),
+      ];
 }
